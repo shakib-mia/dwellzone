@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  @apply w-0;
+}
+
 body {
   @apply font-roboto;
 }
@@ -12,25 +16,25 @@ button {
 }
 
 button.primary {
-  @apply rounded-none bg-primary text-white border-2 border-primary hover:bg-transparent hover:text-primary;
+  @apply rounded-none border-2 border-primary bg-primary text-white hover:bg-transparent hover:text-primary;
 }
 
 h1 {
-  @apply text-32 sm:text-4xl md:text-5xl lg:text-64 leading-[120%];
+  @apply font-playfair-display text-32 !leading-[112.5%] sm:text-4xl md:text-5xl lg:text-64;
 }
 
 h2 {
-  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[120%];
+  @apply font-playfair-display text-2xl !leading-[112.5%] sm:text-3xl md:text-4xl lg:text-5xl;
 }
 
 h3 {
-  @apply text-xl sm:text-2xl md:text-2xl lg:text-32 leading-[120%];
+  @apply font-playfair-display text-xl !leading-[112.5%] sm:text-2xl md:text-2xl lg:text-32;
 }
 
 h4 {
-  @apply text-lg sm:text-xl md:text-2xl lg:text-2xl leading-[120%];
+  @apply font-playfair-display text-lg !leading-[112.5%] sm:text-xl md:text-2xl lg:text-2xl;
 }
 
 h5 {
-  @apply text-base sm:text-lg md:text-xl lg:text-xl leading-[120%];
+  @apply font-playfair-display text-base !leading-[112.5%] sm:text-lg md:text-xl lg:text-xl;
 }

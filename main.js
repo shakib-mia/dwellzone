@@ -31,12 +31,13 @@ playButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   videoOverlay.classList.remove("flex");
   videoOverlay.classList.add("hidden");
-  videoOverlay.addEventListener("click", (e) => {
-    // Close the overlay if the click is outside the video iframe
-    if (!videoFrame.contains(e.target) && !closeButton.contains(e.target)) {
-      videoOverlay.classList.add("hidden");
-    }
-  });
   // Stop the video (uncomment if needed)
   videoFrame.src = videoFrame.src.replace("?autoplay=1", "");
+});
+
+videoOverlay.addEventListener("click", (e) => {
+  // Close the overlay if the click is outside the video iframe
+  if (!videoFrame.contains(e.target) && !closeButton.contains(e.target)) {
+    videoOverlay.classList.add("hidden");
+  }
 });

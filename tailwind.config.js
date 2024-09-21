@@ -27,7 +27,7 @@ export default {
         },
         black: {
           DEFAULT: "#000000",
-          heading: "#008B8B",
+          heading: "#000929",
           text: "#212529",
         },
         gray: "#F8F8F8",
