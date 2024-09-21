@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="z-[999999999999999999999] w-screen bg-white transition fixed top-0 left-0"
+      id="navbar"
+    >
+      <nav class="relative w-screen bg-white shadow-md xl:shadow-none">
+        <div class="container flex items-center justify-between py-4 xl:py-5">
+          <!-- Logo -->
+          <a href="#">
+            <img src="./assets/logo.png" alt="logo" />
+          </a>
+
+          <!-- Hamburger Icon (Visible on Mobile) -->
+          <div class="flex items-center xl:hidden">
+            <span
+              id="menu-toggle"
+              class="text-4xl text-primary focus:outline-none"
+            >
+              <i class="fas fa-bars"></i>
+            </span>
+          </div>
+
+          <!-- Navbar Links -->
+          <ul
+            id="menu"
+            class="absolute left-0 top-[99%] max-h-0 w-screen divide-y divide-secondary overflow-hidden bg-white text-lg text-black shadow-lg transition-all duration-500 ease-linear xl:static xl:mt-0 xl:flex xl:max-h-full xl:w-auto xl:gap-8 xl:divide-y-0 xl:bg-transparent xl:py-0 xl:shadow-none capitalize"
+          >
+            <!-- Navbar Item -->
+            <li
+              class="hover:bg-primary hover:text-white xl:hover:bg-transparent xl:hover:text-primary relative group"
+            >
+              <a
+                href="#"
+                class="container block py-4 transition lg:px-0 xl:p-4 xl:px-0"
+                >Home</a
+              >
+
+              <!-- underline -->
+              <div
+                class="w-0 transition-[width] h-[1.55px] absolute bottom-3 left-0 right-0 mx-auto bg-primary group-hover:w-full"
+              ></div>
+            </li>
+            <!-- Navbar Item -->
+            <li
+              class="hover:bg-primary hover:text-white xl:hover:bg-transparent xl:hover:text-primary relative group"
+            >
+              <a
+                href="#about"
+                class="container block py-4 transition lg:px-0 xl:p-4 xl:px-0"
+                >About</a
+              >
+
+              <!-- underline -->
+              <div
+                class="w-0 transition-[width] h-[1.55px] absolute bottom-3 left-0 right-0 mx-auto bg-primary group-hover:w-full"
+              ></div>
+            </li>
+            <!-- Navbar Item -->
+            <li
+              class="hover:bg-primary hover:text-white xl:hover:bg-transparent xl:hover:text-primary relative group"
+            >
+              <a
+                href="#properties"
+                class="container block py-4 transition lg:px-0 xl:p-4 xl:px-0"
+                >properties</a
+              >
+
+              <!-- underline -->
+              <div
+                class="w-0 transition-[width] h-[1.55px] absolute bottom-3 left-0 right-0 mx-auto bg-primary group-hover:w-full"
+              ></div>
+            </li>
+            <!-- Navbar Item -->
+            <li
+              class="hover:bg-primary hover:text-white xl:hover:bg-transparent xl:hover:text-primary relative group"
+            >
+              <a
+                href="#projects"
+                class="container block py-4 transition lg:px-0 xl:p-4 xl:px-0"
+                >projects</a
+              >
+
+              <!-- underline -->
+              <div
+                class="w-0 transition-[width] h-[1.55px] absolute bottom-3 left-0 right-0 mx-auto bg-primary group-hover:w-full"
+              ></div>
+            </li>
+            <!-- Navbar Item -->
+            <li
+              class="hover:bg-primary hover:text-white xl:hover:bg-transparent xl:hover:text-primary relative group"
+            >
+              <a
+                href="#blogs"
+                class="container block py-4 transition lg:px-0 xl:p-4 xl:px-0"
+                >Blogs</a
+              >
+
+              <!-- underline -->
+              <div
+                class="w-0 transition-[width] h-[1.55px] absolute bottom-3 left-0 right-0 mx-auto bg-primary group-hover:w-full"
+              ></div>
+            </li>
+            <!-- Navbar Item -->
+            <li
+              class="hover:bg-primary hover:text-white xl:hover:bg-transparent xl:hover:text-primary relative group"
+            >
+              <a
+                href="#faq"
+                class="container block py-4 transition lg:px-0 xl:p-4 xl:px-0"
+                >FAQ</a
+              >
+
+              <!-- underline -->
+              <div
+                class="w-0 transition-[width] h-[1.55px] absolute bottom-3 left-0 right-0 mx-auto bg-primary group-hover:w-full"
+              ></div>
+            </li>
+          </ul>
+
+          <!-- Register Button -->
+          <button class="primary hidden xl:inline-block">Contact</button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+
+    <header class="container flex gap-6 py-14 lg:py-32 flex-col lg:flex-row">
+      <aside class="w-full lg:w-8/12">
+        <h1>Find Your Dream Home in the Perfect Neighborhood</h1>
+      </aside>
+      <!-- Right Side -->
+      <aside class="w-full lg:w-4/12 relative">
+        <img
+          src="./assets/hero-right.jpg"
+          class="w-full h-full object-cover"
+          alt="hero-right"
+        />
+        <div
+          class="absolute top-0 bottom-0 right-0 left-0 m-auto w-full h-full flex items-center justify-center"
+        >
+          <i
+            class="fas fa-play-circle text-6xl text-white cursor-pointer"
+            id="play-button"
+          ></i>
+        </div>
+
+        <!-- Video Overlay -->
+        <div
+          id="video-overlay"
+          class="fixed w-screen h-screen top-0 left-0 bg-black bg-opacity-75 hidden items-center justify-center z-[999999999999999999999999999999999999]"
+        >
+          <div class="relative w-10/12 max-w-3xl">
+            <iframe
+              id="video-frame"
+              class="w-full aspect-video"
+              src="https://www.youtube.com/embed/KLuTLF3x9sA?si=B9wVYXrZro-6kTIy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <button
+              id="close-button"
+              class="absolute -top-12 -right-12 text-white text-2xl"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <script
+      src="https://kit.fontawesome.com/b50fc748ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/b50fc748ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
