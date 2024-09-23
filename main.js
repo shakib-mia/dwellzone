@@ -1,6 +1,8 @@
 // import Swiper JS
 import Swiper from "swiper";
 import { Autoplay, Navigation } from "swiper/modules";
+// For Smooth Scroll
+import Lenis from "lenis";
 
 // Phone Navbar Toggle
 
@@ -60,3 +62,17 @@ new Swiper(".swiper", {
     prevEl: ".swiper-prev",
   },
 });
+
+// Smooth Scroll Functionality
+const lenis = new Lenis();
+
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
