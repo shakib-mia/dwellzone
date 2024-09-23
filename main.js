@@ -1,3 +1,7 @@
+// import Swiper JS
+import Swiper from "swiper";
+import { Autoplay, Navigation } from "swiper/modules";
+
 // Phone Navbar Toggle
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -8,7 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Toggle between max-h-0 and max-h-[500px] for smooth height transition
     if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
       menu.style.maxHeight = "500px"; // Set a large enough height for smooth transition
+      setTimeout(() => menu.classList.add("shadow-lg"), 200);
     } else {
+      setTimeout(() => menu.classList.remove("shadow-lg"), 200);
       menu.style.maxHeight = "0px"; // Collapse the menu
     }
   });
@@ -40,4 +46,17 @@ videoOverlay.addEventListener("click", (e) => {
   if (!videoFrame.contains(e.target) && !closeButton.contains(e.target)) {
     videoOverlay.classList.add("hidden");
   }
+});
+
+// Testimonial Swiper
+
+new Swiper(".swiper", {
+  modules: [Navigation, Autoplay],
+  loop: true, // enabling infinite loop
+  autoplay: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
 });

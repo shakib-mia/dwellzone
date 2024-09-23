@@ -8,7 +8,12 @@ export default {
     },
     container: {
       center: true,
-      padding: "1rem",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "1rem",
+        lg: "0",
+        xl: "0",
+      },
       screens: {
         sm: "100%",
         md: "768px",
@@ -24,6 +29,7 @@ export default {
       colors: {
         primary: {
           DEFAULT: "#008B8B",
+          dark: "#007A7A",
         },
         black: {
           DEFAULT: "#000000",
@@ -32,6 +38,9 @@ export default {
         },
         gray: "#F8F8F8",
         white: "#FFFFFF",
+      },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },

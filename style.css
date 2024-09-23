@@ -8,11 +8,15 @@
 }
 
 body {
-  @apply font-roboto;
+  @apply font-roboto text-sm md:text-base;
 }
 
 button {
-  @apply whitespace-nowrap px-6 py-3 font-medium transition lg:px-8 lg:py-4;
+  @apply whitespace-nowrap px-6 py-3 font-medium transition disabled:cursor-not-allowed lg:px-8 lg:py-4;
+}
+
+button.btn-outline {
+  @apply rounded-none border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-white;
 }
 
 button.primary {
