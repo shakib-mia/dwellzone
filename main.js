@@ -76,3 +76,61 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+document.getElementById("year").innerText = new Date().getFullYear();
+
+// Navbar scroll direction tracking logic
+const navbar = document.getElementById("navbar");
+navbar.style.position = "fixed";
+navbar.style.top = `0px`;
+
+function createScrollDirectionTracker() {
+  let scrollDirection = "up";
+  let lastScrollY = 0;
+
+  function handleScroll() {
+    const currentScrollY = lenis.scroll || window.pageYOffset; // Using Lenis scroll
+
+    if (currentScrollY > lastScrollY) {
+      scrollDirection = "down";
+    } else {
+      scrollDirection = "up";
+    }
+
+    lastScrollY = currentScrollY;
+
+    // Hide navbar on scroll down
+    if (scrollDirection === "down") {
+      navbar.style.top = "-10rem";
+      navbar.style.transition = "all 0.5s ease";
+    } else {
+      if (currentScrollY > 0) {
+        navbar.style.top = "0";
+      } else {
+        navbar.style.top = `0px`;
+        navbar.style.transition = "all 0.5s ease";
+      }
+    }
+
+    // Box shadow and fixed position on scroll
+    if (currentScrollY > 10) {
+      navbar.style.boxShadow = "0 0 20px 0 #2B245D21";
+      navbar.style.position = "fixed";
+    } else {
+      navbar.style.boxShadow = "none";
+      navbar.style.top = `0px`;
+    }
+  }
+
+  // Listen to scroll events
+  window.addEventListener("scroll", handleScroll);
+
+  return {
+    getScrollDirection: () => scrollDirection,
+    cleanup: () => {
+      window.removeEventListener("scroll", handleScroll);
+    },
+  };
+}
+
+createScrollDirectionTracker();
