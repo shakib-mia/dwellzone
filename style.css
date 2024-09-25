@@ -50,3 +50,11 @@ h6 {
 #email:focus + #input-border-bottom {
   @apply w-full;
 }
+
+button.tab-button {
+  @apply rounded-none border-2 border-primary bg-transparent text-primary;
+}
+
+.active-tab {
+  @apply !bg-primary !text-white;
+}
