@@ -151,7 +151,7 @@
           >
             <!-- Header -->
             <h1
-              class="text-center font-bold text-black-heading lg:w-4/5 lg:text-left"
+              class="font-bold text-black-heading lg:w-4/5 lg:text-left"
               data-aos="fade-right"
               data-aos-duration="1000"
             >
@@ -160,7 +160,7 @@
 
             <!-- Paragraph -->
             <p
-              class="my-6 w-full text-center lg:mb-10 lg:mt-4 lg:w-3/5 lg:text-left"
+              class="my-6 w-full lg:mb-10 lg:mt-4 lg:w-3/5 lg:text-left"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="200"
@@ -171,9 +171,7 @@
             </p>
 
             <!-- Call-to-action buttons and customer trust section -->
-            <div
-              class="flex flex-col items-center justify-center gap-4 lg:flex-row xl:justify-normal xl:gap-2"
-            >
+            <div class="flex flex-col gap-4 lg:flex-row xl:justify-normal">
               <div
                 data-aos="fade-right"
                 data-aos-duration="1000"
@@ -183,13 +181,13 @@
               </div>
 
               <div
-                class="flex items-center justify-center gap-2"
+                class="flex items-center gap-8 lg:gap-4"
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-delay="400"
               >
                 <!-- Customer images with trust statement -->
-                <div class="relative h-11 w-4/12">
+                <div class="relative h-11 w-3/12 lg:w-4/12">
                   <img
                     src="./assets/customers/Ellipse 10.jpg"
                     alt=""
@@ -205,8 +203,15 @@
                     alt=""
                     class="absolute left-10 top-0 z-[1] h-11 w-11 rounded-full"
                   />
+                  <img
+                    src="./assets/customers/Ellipse 11.jpg"
+                    alt=""
+                    class="absolute left-14 top-0 z-[0] h-11 w-11 rounded-full lg:left-16"
+                  />
                 </div>
-                <p class="w-9/12">Trusted by Over 10,000 Satisfied Customers</p>
+                <p class="w-9/12 lg:w-8/12">
+                  Trusted by Over 10,000 Satisfied Customers
+                </p>
               </div>
             </div>
           </div>
@@ -221,7 +226,7 @@
             <!-- Destination input field -->
             <aside>
               <label class="text-left" for="location">Location</label>
-              <div class="relative mt-2">
+              <!-- <div class="relative mt-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -247,6 +252,40 @@
                   placeholder="Dhaka"
                   id="location"
                 />
+              </div> -->
+              <div class="relative mt-2 bg-gray p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="absolute bottom-0 left-3 top-0 my-auto size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                  />
+                </svg>
+                <select
+                  name=""
+                  id=""
+                  class="mx-4 w-11/12 bg-transparent focus:outline-none"
+                >
+                  <option disabled selected>Choose a City</option>
+                  <option value="Manchestar">Manchestar</option>
+                  <option value="London">London</option>
+                  <option value="Derby">Derby</option>
+                  <option value="New York">New York</option>
+                  <option value="San Francisco">San Francisco</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                </select>
               </div>
             </aside>
 
@@ -336,6 +375,7 @@
       <!-- Services Section -->
       <section
         class="container mb-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:mb-32 lg:grid-cols-3 lg:gap-7"
+        id="about"
       >
         <!-- Service Card 1: Exclusive Listings -->
         <div data-aos="fade-up" data-aos-duration="1000">
@@ -456,7 +496,7 @@
       </section>
 
       <!-- Featured Properties -->
-      <section class="bg-gray py-14 lg:py-28">
+      <section class="bg-gray py-14 lg:py-28" id="properties">
         <div class="container">
           <div class="flex flex-col justify-between gap-4 lg:flex-row">
             <!-- Section Heading -->
@@ -1080,13 +1120,11 @@
               data-aos-duration="1000"
             >
               <div
-                class="flex h-8 w-8 items-center justify-center rounded-full bg-primary"
+                class="flex h-7 w-7 items-center justify-center rounded-full bg-primary lg:h-8 lg:w-8"
               >
                 <i class="fas fa-check text-white"></i>
               </div>
-              <p class="font-roboto font-semibold">
-                Experience Unparalleled Quality
-              </p>
+              <p class="font-roboto">Experience Unparalleled Quality</p>
             </li>
 
             <!-- Section List Item -->
@@ -1096,13 +1134,11 @@
               data-aos-duration="1000"
             >
               <div
-                class="flex h-8 w-8 items-center justify-center rounded-full bg-primary"
+                class="flex h-7 w-7 items-center justify-center rounded-full bg-primary lg:h-8 lg:w-8"
               >
                 <i class="fas fa-check text-white"></i>
               </div>
-              <p class="font-roboto font-semibold">
-                Built to Last for Generations
-              </p>
+              <p class="font-roboto">Built to Last for Generations</p>
             </li>
 
             <!-- Section List Item -->
@@ -1112,13 +1148,11 @@
               data-aos-duration="1000"
             >
               <div
-                class="flex h-8 w-8 items-center justify-center rounded-full bg-primary"
+                class="flex h-7 w-7 items-center justify-center rounded-full bg-primary lg:h-8 lg:w-8"
               >
                 <i class="fas fa-check text-white"></i>
               </div>
-              <p class="font-roboto font-semibold">
-                Loved by Customers Worldwide
-              </p>
+              <p class="font-roboto">Loved by Customers Worldwide</p>
             </li>
           </ul>
 
@@ -1232,13 +1266,13 @@
                   data-aos-delay="200"
                 >
                   <!-- Happy People Count -->
-                  <h4 class="mb-1 font-medium">10M+</h4>
+                  <h4 class="mb-1 text-3xl font-medium lg:text-2xl">10M+</h4>
                   <p>Happy People</p>
                 </aside>
 
                 <aside data-aos="fade-right" data-aos-duration="1000">
                   <!-- Overall Rating -->
-                  <h4 class="mb-1 font-medium">4.88</h4>
+                  <h4 class="mb-1 text-3xl font-medium lg:text-2xl">4.88</h4>
                   <p>Overall Rating</p>
                 </aside>
               </div>
@@ -1273,7 +1307,7 @@
                         <!-- Customer Name -->
                         <h5 class="font-medium">Tom H.</h5>
                         <!-- Customer Designation -->
-                        <p class="my-2 text-sm text-[#727676]">Home Owner</p>
+                        <p class="mb-2 text-sm text-[#727676]">Home Owner</p>
 
                         <!-- Star Rating -->
                         <div class="flex gap-1">
@@ -1310,7 +1344,7 @@
                         <!-- Customer Name -->
                         <h5 class="font-medium">Tom H.</h5>
                         <!-- Customer Designation -->
-                        <p class="my-2 text-sm text-[#727676]">Home Owner</p>
+                        <p class="mb-2 text-sm text-[#727676]">Home Owner</p>
 
                         <!-- Star Rating -->
                         <div class="flex gap-1">
@@ -1347,7 +1381,7 @@
                         <!-- Customer Name -->
                         <h5 class="font-medium">Tom H.</h5>
                         <!-- Customer Designation -->
-                        <p class="my-2 text-sm text-[#727676]">Home Owner</p>
+                        <p class="mb-2 text-sm text-[#727676]">Home Owner</p>
 
                         <!-- Star Rating -->
                         <div class="flex gap-1">
@@ -1384,7 +1418,7 @@
                         <!-- Customer Name -->
                         <h5 class="font-medium">Tom H.</h5>
                         <!-- Customer Designation -->
-                        <p class="my-2 text-sm text-[#727676]">Home Owner</p>
+                        <p class="mb-2 text-sm text-[#727676]">Home Owner</p>
 
                         <!-- Star Rating -->
                         <div class="flex gap-1">
@@ -1412,7 +1446,7 @@
                   <!-- Previous Button -->
                   <div data-aos="fade-left" data-aos-duration="1000">
                     <button
-                      class="swiper-prev flex aspect-square w-16 items-center justify-center rounded-full bg-primary p-0 text-white hover:bg-primary-dark disabled:text-black disabled:opacity-50"
+                      class="swiper-prev flex aspect-square w-14 items-center justify-center rounded-full bg-primary p-0 text-2xl text-white hover:bg-primary-dark disabled:text-black disabled:opacity-50 lg:w-16"
                     >
                       <i class="fas fa-chevron-left"></i>
                     </button>
@@ -1424,7 +1458,7 @@
                     data-aos-delay="100"
                   >
                     <button
-                      class="swiper-next flex aspect-square w-16 items-center justify-center rounded-full bg-primary p-0 text-white hover:bg-primary-dark disabled:text-black disabled:opacity-50"
+                      class="swiper-next flex aspect-square w-14 items-center justify-center rounded-full bg-primary p-0 text-2xl text-white hover:bg-primary-dark disabled:text-black disabled:opacity-50 lg:w-16"
                     >
                       <i class="fas fa-chevron-right"></i>
                     </button>
@@ -1510,10 +1544,10 @@
       </section>
 
       <!-- Real Estate Insights Section -->
-      <section class="container py-14 lg:py-28">
+      <section class="container py-14 lg:py-28" id="blogs">
         <!-- Section Heading with Animation -->
         <h2
-          class="mb-5 text-center font-semibold lg:mb-10"
+          class="mb-5 text-left font-semibold lg:mb-10 lg:text-center"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
@@ -1537,9 +1571,9 @@
               />
 
               <!-- Article Title -->
-              <h5 class="p-2 pb-8 font-semibold !leading-[150%]">
+              <h6 class="p-2 pb-8 font-semibold !leading-[150%]">
                 A Comprehensive Guide to Navigating the Market
-              </h5>
+              </h6>
             </article>
           </div>
 
@@ -1556,9 +1590,9 @@
               />
 
               <!-- Article Title -->
-              <h5 class="p-2 pb-8 font-semibold !leading-[150%]">
-                Exploring the Benefits of Urban vs. Suburban
-              </h5>
+              <h6 class="p-2 pb-8 font-semibold !leading-[150%]">
+                How to Choose the Perfect Neighborhood for Your New Home
+              </h6>
             </article>
           </div>
 
@@ -1575,16 +1609,16 @@
               />
 
               <!-- Article Title -->
-              <h5 class="p-2 pb-8 font-semibold !leading-[150%]">
+              <h6 class="p-2 pb-8 font-semibold !leading-[150%]">
                 Investing in Real Estate: Key Strategies for Building Wealth
-              </h5>
+              </h6>
             </article>
           </div>
         </div>
       </section>
 
       <!-- Section with background color and padding for spacing -->
-      <section class="bg-primary bg-opacity-60 py-14 lg:py-28">
+      <section class="bg-primary bg-opacity-60 py-14 lg:py-28" id="faq">
         <div class="container grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-7">
           <!-- Aside element with white background and padding -->
           <aside
@@ -1651,9 +1685,9 @@
       </section>
 
       <!-- Collection Best Projects -->
-      <section class="px-4 py-14 lg:px-0 lg:py-28">
+      <section class="px-4 py-14 lg:px-0 lg:py-28" id="projects">
         <h2
-          class="mb-10 text-center font-semibold"
+          class="mb-4 text-center font-semibold lg:mb-10"
           data-aos="fade-down"
           data-aos-duration="1000"
         >

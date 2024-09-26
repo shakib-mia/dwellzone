@@ -55,7 +55,7 @@ videoOverlay.addEventListener("click", (e) => {
 new Swiper(".swiper", {
   modules: [Navigation, Autoplay],
   loop: true, // enabling infinite loop
-  autoplay: true,
+  // autoplay: true,
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-next",
