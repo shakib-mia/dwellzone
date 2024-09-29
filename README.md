@@ -2,16 +2,19 @@
 
 DwellZone is an exclusive Real Estate website template artfully crafted to be rich in features yet easy to handle for a real estate business. Property showcasing is its fore, raising user experiences from both buyers' and sellers' points of view. With a clean, responsive design, DwellZone makes sure that properties are beautifully presented on every device, making it accessible for clients on the go. Advanced search capabilities, featured listings, and ease of navigation enable prospective buyers to find that dream home, while it's easy for sellers to showcase properties. The DwellZone is committed to giving an exceptional approach to the real estate business for increasing customer satisfaction and, therefore, business success.
 
-**Live Preview:** [BlueHire](https://legalmark.netlify.app/)
+**Live Preview:** [DwellZone](https://dwellzone.netlify.app/)
 
 ## Features
 
-- **Responsive Design:** Built with a mobile-first approach to ensure the site works seamlessly across all devices and screen sizes.
-- **Customizable Layout:** Powered by Tailwind CSS for easy customization of colors, fonts, and layout to align with your business brand.
-- **Optimized Performance:** Fast load times and smooth navigation powered by Vite’s quick build process.
-- **Service Listings:** Clearly defined notary services such as document authentication, real estate closings, and mobile notary services.
-- **Client Testimonials & FAQs:** Display sections for client reviews and answers to common questions, enhancing credibility and user trust.
-- **Online Booking System:** Convenient appointment scheduling with just a single click, making it easy for users to book notary services.
+- **Responsive Design:** The website is optimized for a seamless experience across all devices, ensuring easy navigation on desktops, tablets, and smartphones.
+
+- **Customizable Layout:** Built with Tailwind CSS, allowing for easy adjustments to colors, fonts, and layouts, ensuring the site matches your branding.
+
+- **Property Search & Filtering:** Advanced search filters that allow users to refine properties by location, price range, and property type for a personalized browsing experience.
+
+- **Exclusive Listings:** Highlighted premium properties such as luxury estates, penthouses, and scenic villas, offering users access to unique opportunities.
+
+- **Client Testimonials & Ratings:** A section dedicated to showcasing real client reviews and ratings, increasing trust and engagement with prospective buyers.
 
 ## Usage Instructions
 
